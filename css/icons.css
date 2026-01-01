@@ -1,0 +1,52 @@
+/* ========================================
+   SISTEMA DE ÍCONES SVG
+======================================== */
+
+.icon {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  background-color: currentColor;
+
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+.icon-global {
+  -webkit-mask-image: url("../img/icons/projeto.svg");
+  mask-image: url("../img/icons/projeto.svg");
+}
+.icon-logo { 
+  -webkit-mask-image: url("../img/icons/short_logo_gold.svg");
+  mask-image: url("../img/icons/short_logo_gold.svg");
+}
+.icon-servicos { 
+  -webkit-mask-image: url("../img/icons/servicos.svg");
+  mask-image: url("../img/icons/servicos.svg");
+}
+.icon-projetos { 
+  -webkit-mask-image: url("../img/icons/projetos.svg");
+  mask-image: url("../img/icons/projetos.svg");
+}
+
+/*====================================
+
+		PADRÃO DE CORES DE ÍCONES
+
+====================================*/
+.dourado{color:#d4af37;background-color: #d4af37; /* COR DO ÍCONE */}
+
+/*====================================
+
+		PADRÃO DE TAMANHO DE ÍCONES
+
+====================================*/
+.icon-grande{width:200px;height:200px}
+.icon-medio{width:100px;height:100px}
+.icon-pequeno{width:50px;height:50px}
+.icon-minimo{width:25px;height:50px}

@@ -1,0 +1,266 @@
+@charset "utf-8";
+/* =============================
+   NAVBAR HOME - PERSONALIZAÇÃO
+============================= */
+
+/* Navbar links */
+.navbar-home .navbar-links li a {
+    color: #efefef;           /* texto branco */
+    text-transform: uppercase; /* todas as letras maiúsculas */
+    transition: color 0.3s ease; /* transição suave para hover */
+}
+
+/* Hover dos links */
+.navbar-home .navbar-links li a:hover {
+    color: #d4af37;           /* dourado */
+}
+
+/* Logo se quiser destaque adicional */
+.navbar-home .navbar-logo img {
+    filter: brightness(1);    /* mantém cores originais da logo */
+}
+
+/* Para mobile, links mantêm cores e hover */
+@media (max-width: 740px) {
+    .navbar-home .navbar-links li a {
+        color: #efefef;
+        text-transform: uppercase;
+    }
+
+    .navbar-home .navbar-links li a:hover {
+        color: #d4af37;
+    }
+}
+
+/* =============================
+
+   CLASSES DE CORES GLOBAIS
+   
+============================= */
+
+/* --------------------------
+   FUNDOS
+   Classe: bg.nome_da_cor
+---------------------------- */
+.bg-dark { background-color: #0d0d0d; }     /* 90% preto */
+.bg-gold { background-color: #d4af37; }     /* dourado */
+.bg-light { background-color: #efefef; }    /* branco */
+
+/* --------------------------
+   TEXTOS / CABEÇALHOS / PARÁGRAFOS
+   Classe: txt.nome_da_cor
+---------------------------- */
+.txt-dark { color: #000; }
+.txt-gold { color: #d4af37; }
+.txt-light { color: #efefef; }
+
+/* --------------------------
+   LINKS E BOTÕES
+   Classe: btn.nome_da_cor
+---------------------------- */
+/* Botões principais */
+.btn {
+    transition: all 0.3s ease; /* transição suave de 0.3s para todas as propriedades */
+}
+
+/* Hover */
+.btn:hover {
+    transform: translateY(-2px); /* leve elevação ao passar o mouse */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* sombra sutil */
+}
+/* fundo preto / texto branco */
+.btn-preto90 { background-color: #0d0d0d; color: #efefef; border: 2px solid transparent; }
+.btn-preto90:hover{border:2px solid #0d0d0d;border-color: #0d0d0d;}
+
+/* outline preto / texto preto */
+.btn-outline-black { background-color: transparent; color: #0d0d0d; border: 1px solid #0d0d0d; }
+
+/* fundo dourado / texto preto */
+.btn-gold { background-color: #d4af37; color: #0d0d0d; border: 2px solid transparent; }
+.btn-gold:hover{border:2px solid #d4af37;color:#d4af37;border-color: #d4af37;}
+
+/* outline dourado / texto dourado */
+.btn-gold-outline { background-color: transparent; color: #d4af37; border: 2px solid #d4af37; }
+.btn-gold-outline:hover { background-color: #d4af37; color: #000; border: 2px solid #d4af37; }
+
+/* fundo branco / texto preto */
+.btn-white { background-color: #efefef; color: #0d0d0d; border: none; }
+
+/* outline branco / texto branco */
+.btn-outline-white { background-color: transparent; color: #efefef; border: 1px solid #efefef; }
+
+/* hover suave para todos os botões */
+.btn-black:hover,
+.btn-gold:hover,
+.btn-white:hover,
+.btn-outline-black:hover,
+.btn-outline-gold:hover,
+.btn-outline-white:hover {
+    opacity: 0.99;
+    transition: opacity 0.3s ease;
+}
+
+/* --------------------------
+   SÍMBOLOS (como ©, ★, ⚡)
+   Classe: txt.nome_da_cor
+---------------------------- */
+.txt-symbol-dark, .txt-gold { color: #0d0d0d; }
+.txt-symbol-gold, .txt-gold { color: #d4af37 !important; }
+.txt-symbol-light { color: #efefef; }
+
+/* --------------------------
+   ÍCONES / SVGs
+   Classe: txt.nome_da_cor
+---------------------------- */
+.txt-icon-dark { fill: #0d0d0d; color: #0d0d0d; }
+.txt-icon-gold { fill: #d4af37; color: #d4af37; }
+.txt-icon-light { fill: #efefef; color: #efefef; }
+/**/
+/**/
+/**/
+/* =========================================
+   NAVBAR – PÁGINAS INTERNAS (BOOTSTRAP)
+   Personalização visual
+   style.css
+========================================= */
+
+/* Links da navbar */
+.navbar .nav-link {
+  font-size: 1.3rem;        /* maior, elegante */
+  font-weight: 500;
+  text-transform:uppercase;
+  color:#efefef;
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease;
+}
+
+/* Hover dourado */
+.navbar .nav-link:hover {
+  color: #d4af37;
+}
+
+/* Link ativo */
+.navbar .nav-link.active {
+  color: #d4af37;
+}
+
+/* =========================================
+   NAVBAR TOGGLER – PERSONALIZAÇÃO
+   style.css
+========================================= */
+
+/* Remove borda do botão */
+.navbar-toggler {
+  border: none;
+  box-shadow: none;
+}
+
+/* Remove outline ao focar/clicar */
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Ícone do toggler em dourado */
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23d4af37' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+/* =========================================
+   PORTFOLIO – SLIDE DE PROJETOS
+========================================= */
+.portfolio-slider {
+    background-color: var(--cor-fundo-padrao);
+    color: var(--cor-texto-padrao);
+}
+
+#portfolioCarousel .carousel-item {
+    /* garante que o slide ocupe 100% da largura da coluna */
+    width: 100%;
+	margin-bottom:70px;
+}
+
+#portfolioCarousel .carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaço entre os botões */
+	bottom:-20px;
+}
+
+#portfolioCarousel .carousel-indicators button {
+	width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background-color: #555; /* Cor padrão dos não ativos */
+    opacity: 0.8;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#portfolioCarousel .carousel-indicators button.active {
+    background-color: #000; /* Cor do botão ativo */
+    transform: scale(1.2);   /* Leve aumento para destacar */
+    opacity: 1;
+}
+.carousel-indicators .btn-extras {
+    width: 40px;                /* mesmo tamanho dos outros indicadores */
+    height: 40px;
+    border-radius: 50%;          /* mantém o círculo */
+    background-color: #000 !important;  /* fundo contrastante se quiser */
+    color: #fff;                 /* cor do + */
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 0.3rem;         /* separação entre indicadores */
+	margin-bottom:20px;
+	padding:18px;
+	transform: translateY(-12px); /* sobe o botão ligeiramente */
+}
+
+.carousel-indicators .btn-extras:hover {
+    background-color: #d4af37 !important; /* efeito hover opcional */
+    color: #000 !important;
+}
+.modal .modal-header{width:100%;border-bottom:1px transparent #efefef;}
+.modal .modal-title{
+	font-size:12pt;
+	color:#efefef;
+	}
+.modal .btn-close {
+	color:#fff;
+}
+
+.modal .btn-close:hover {
+    background-color: #d4af37; /* dourado */
+	color:#000;
+}
+
+/* =========================================
+   SEPARADOR PSEUDO-ELEMENTO
+========================================= */
+.separador::before {
+    content: "";
+    display: block;
+    width: 90%;          /* metade da largura do container */
+    height: 2px;         /* altura da linha */
+    background-color: rgba(0,0,0,0.03); /* preto 50% */
+    margin: 20px auto;   /* centraliza horizontalmente com espaço acima e abaixo */
+}
+.separador-pequeno::after {
+    content: "";
+    display: block;
+    width: 75px;          /* metade da largura do container */
+    height: 3px;         /* altura da linha */
+    background-color: #d4af37; /* preto 50% */
+    margin: 20px auto;   /* centraliza horizontalmente com espaço acima e abaixo */
+}
+.separador-pequeno-pt::after {
+    content: "";
+    display: block;
+    width: 75px;          /* metade da largura do container */
+    height: 3px;         /* altura da linha */
+    background-color: #333; /* preto 50% */
+    margin: 20px auto;   /* centraliza horizontalmente com espaço acima e abaixo */
+}
