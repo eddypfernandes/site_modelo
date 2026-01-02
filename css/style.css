@@ -276,6 +276,11 @@
     object-fit: contain;
     display: block;
 }
+#carouselExtras video{
+	width:100%;
+	min-height:35vh;
+	display:block;
+	}
 
 @media (max-width: 768px) {
 	#portfolioCarousel .carousel-item {
@@ -288,6 +293,9 @@
 	}
 	 #portfolioCarousel video {
         max-height: 50vh;
+    }
+	#carouselExtras .carousel-item {
+        min-height: 55vh;
     }
 }
 
