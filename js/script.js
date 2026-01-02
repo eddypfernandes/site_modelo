@@ -261,3 +261,45 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+/* ================================
+   ENVIO DO FORM VIA FETCH (FORMFREE)
+   ================================ */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const form = document.getElementById("contatoForm");
+
+    if (!form) return; // segurança: se não existir, sai
+
+    form.addEventListener("submit", function (e) {
+
+        e.preventDefault(); // impede o redirect padrão do form
+
+        // Cria objeto com os dados do formulário
+        const formData = new FormData(form);
+
+        // Envia os dados para o Formspree
+        fetch(form.action, {
+            method: "POST",
+            body: formData,
+            headers: {
+                "Accept": "application/json" // evita HTML de resposta
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                // Sucesso → redireciona para sua página
+                window.location.href = "obrigado.html";
+            } else {
+                // Erro tratado (opcional)
+                alert("Erro ao enviar. Tente novamente.");
+            }
+        })
+        .catch(error => {
+            console.error("Erro:", error);
+            alert("Falha de conexão.");
+        });
+
+    });
+
+});
