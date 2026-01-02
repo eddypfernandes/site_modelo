@@ -289,7 +289,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(response => {
             if (response.ok) {
                 // Sucesso → redireciona para sua página
-                window.location.href = "obrigado.html";
+                window.location.href = "envio.html";
             } else {
                 // Erro tratado (opcional)
                 alert("Erro ao enviar. Tente novamente.");
