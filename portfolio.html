@@ -19,6 +19,7 @@
     <meta property="og:title" content="Portfolio - Ed Fernandes | Design Gráfico e Arte-Final">
     <meta property="og:description" content="Portfolio de Ed Fernandes. Veja cases de sucesso e projetos de clientes que receberam serviços de design gráfico, arte-final, diagramação e motion graphics.">
     <meta property="og:image" content="https://eddypfernandes.github.io/site_modelo/img/logo_thumb.png">
+    <meta property="og:image:secure_url" content="https://eddypfernandes.github.io/site_modelo/img/logo_thumb.png">
     <meta property="og:url" content="https://eddypfernandes.github.io/site_modelo/portfolio.html">
     <meta property="og:site_name" content="Ed Fernandes">
 
@@ -42,39 +43,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/icons.css">
 
-    <!-- =========================================
-         SCHEMA JSON-LD
-         (opcional, mas recomendado)
-    ======================================== -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Portfolio",
-      "name": "Ed Fernandes - Design Gráfico e Arte-finalista",
-      "url": "https://eddypfernandes.github.io/site_modelo/portfolio.html",
-      "creator": {
-        "@type": "Person",
-        "name": "Ed Fernandes"
-      },
-      "hasPart": [
-        {
-          "@type": "CreativeWork",
-          "name": "Open Mind Marketing",
-          "description": "Redesign completo com foco em clareza e impacto visual",
-          "image": "https://seusite.com/img/2.jpg"
-        },
-        
-		{
-          "@type": "CreativeWork",
-          "name": "Cliente Y",
-          "description": "Padronização visual e peças editoriais alinhadas à marca",
-          "image": "https://seusite.com/img/3.jpg"
-        }
-		
-      ]
-    }
-    </script>
-
 </head>
 
 <body>
@@ -86,7 +54,7 @@
   <nav class="navbar fixed-top navbar-expand-lg bg-dark navbar-dark">
         <div class="container">
             
-            <a class="navbar-brand" href="index.html"><img src="img/logo_edsigner_br.svg" alt="Ed Fernandes - designer gráfico e arte-finalista" height="60"></a>
+            <a class="navbar-brand" href="index.html"><img src="img/logo_edsigner_br.svg" alt="Ed Fernandes - Designer gráfico e Arte-finalista" height="60"></a>
     
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBio"><span class="navbar-toggler-icon"></span></button>
     
@@ -148,15 +116,19 @@
 
                         <!-- IMAGEM -->
                         <div class="col-12 col-md-6 mb-4">
-                            <img src="img/2.jpg" class="img-fluid rounded shadow" alt="Projeto Cliente X">
+                            <!--<img src="img/portfolio/casa_das_massas.png" class="img-fluid rounded shadow" alt="Casa das massas">-->
+                            <picture>
+                              <source srcset="/img/portfolio/casa_das_massas.webp" type="image/webp">
+                              <img src="/img/portfolio/casa_das_massas.png" alt="Projeto visual Casa das Massas" loading="lazy">
+                            </picture>
                         </div>
 
                         <!-- TEXTO -->
                         <div class="col-12 col-md-6">
-                            <h6 class="txt-gold d-flex align-items-center"><span class="icon icon-logo icon-minimo me-2"></span>Identidade visual</h6>
-                            <h1 class="mb-4">Open Mind Marketing</h1>
-                            <p><strong>Problema:</strong><br> Atualização da identidade visual da empresa.</p>
-                            <p><strong>Solução:</strong><br> Repaginação da logo atual da empresa, com aplicação de PIV em diversas mídias digitais e impressas, com foco em cleaning model.</p>
+                            <h6 class="txt-gold d-flex align-items-center"><span class="icon icon-logo icon-minimo me-2"></span>Logomarca</h6>
+                            <h1 class="mb-4">Casa das Massas</h1>
+                            <p><strong>Problema:</strong><br>Sem identidade visual e material de divugação digital/impressa.</p>
+                            <p><strong>Solução:</strong><br>Criação de logomarca da empresa para elaboração de cardápio para distribuição externa em delivery.</p>
                         </div>
 
                     </div>
@@ -167,139 +139,31 @@
                     <div class="row align-items-start">
 
                         <div class="col-12 col-md-6 mb-4">
-                            <img src="img/2.jpg" class="img-fluid rounded shadow" alt="Projeto Cliente Y">
+                            <!--<img src="img/portfolio/casa_das_massas.png" class="img-fluid rounded shadow" alt="Casa das massas">-->
+                            <picture>
+                              <source srcset="/img/portfolio/bolos_top.webp" type="image/webp">
+                              <img src="/img/portfolio/bolos_top.png" alt="Projeto visual Casa das Massas" loading="lazy">
+                            </picture>
                         </div>
 
                         <div class="col-12 col-md-6">
-                            <h6 class="txt-gold d-flex align-items-center"><span class="icon icon-logo icon-minimo me-2"></span>Design gráfico</h6>
-                            <h1 class="mb-4">RJ EPI</h1>
-                            <p><strong>Problema:</strong><br> Material gráfico inconsistente entre mídias.</p>
-                            <p><strong>Solução:</strong><br> Padronização visual e peças editoriais alinhadas à marca, e aqui um texto só pra ver se além dessa configuração devemos por uma limitação de caracteres, pra explicar o que realmetne foi feito no serviço que o cliente pediu.</p>
+                            <h6 class="txt-gold d-flex align-items-center"><span class="icon icon-logo icon-minimo me-2"></span>Logomarca</h6>
+                            <h1 class="mb-4">Bolos Top</h1>
+                            <p><strong>Problema:</strong><br>Não havia uma marca para identificar o produto do cliente junto a seu público-alvo.</p>
+                            <p><strong>Solução:</strong><br>Criação de uma logomarca simples para aplicação em materiais impressos e divulgação em redes sociais.</p>
                         </div>
 
                     </div>
                 </div>
                 
-                <!-- SLIDE 3 -->
-                <div class="carousel-item">
-                    <div class="row align-items-start">
-
-                        <div class="col-12 col-md-6 mb-4">
-                            <img src="img/2.jpg" class="img-fluid rounded shadow" alt="Projeto Cliente Y">
-                        </div>
-
-                        <div class="col-12 col-md-6">
-                            <h6 class="txt-gold d-flex align-items-center"><span class="icon icon-logo icon-minimo me-2"></span>Diagramação</h6>
-                            <h1 class="mb-4">Askaban - o quinto projeto</h1>
-                            <p><strong>Problema:</strong><br> Material gráfico inconsistente entre mídias.</p>
-                            <p><strong>Solução:</strong><br> Padronização visual e peças editoriais alinhadas à marca.</p>
-                        </div>
-
-                    </div>
-                </div>
                 
-                 <!-- SLIDE 4 -->
-                <div class="carousel-item">
-                    <div class="row align-items-start">
-
-                        <div class="col-12 col-md-6 mb-4">
-                            <img src="img/2.jpg" class="img-fluid rounded shadow" alt="Projeto Cliente Y">
-                        </div>
-
-                        <div class="col-12 col-md-6">
-                            <h6 class="txt-gold d-flex align-items-center"><span class="icon icon-logo icon-minimo me-2"></span>Diagramação</h6>
-                            <h1 class="mb-4">Major Washington</h1>
-                            <p><strong>Problema:</strong><br> Material gráfico inconsistente entre mídias.</p>
-                            <p><strong>Solução:</strong><br> Padronização visual e peças editoriais alinhadas à marca.</p>
-                        </div>
-
-                    </div>
-                </div>
-                
-                 <!-- SLIDE 5 -->
-                <div class="carousel-item">
-                    <div class="row align-items-start">
-
-                        <div class="col-12 col-md-6 mb-4">
-                            <img src="img/2.jpg" class="img-fluid rounded shadow" alt="Projeto Cliente Y">
-                        </div>
-
-                        <div class="col-12 col-md-6">
-                            <h6 class="txt-gold d-flex align-items-center"><span class="icon icon-logo icon-minimo me-2"></span>Diagramação</h6>
-                            <h1 class="mb-4">Hazard Cleveland</h1>
-                            <p><strong>Problema:</strong><br> Material gráfico inconsistente entre mídias.</p>
-                            <p><strong>Solução:</strong><br> Padronização visual e peças editoriais alinhadas à marca.</p>
-                        </div>
-
-                    </div>
-                </div>
-                
-                 <!-- SLIDE 6 -->
-                <div class="carousel-item">
-                    <div class="row align-items-start">
-
-                        <div class="col-12 col-md-6 mb-4">
-                            <img src="img/2.jpg" class="img-fluid rounded shadow" alt="Projeto Cliente Y">
-                        </div>
-
-                        <div class="col-12 col-md-6">
-                            <h6 class="txt-gold d-flex align-items-center"><span class="icon icon-logo icon-minimo me-2"></span>Diagramação</h6>
-                            <h1 class="mb-4">Lira Ribas</h1>
-                            <p><strong>Problema:</strong><br> Material gráfico inconsistente entre mídias.</p>
-                            <p><strong>Solução:</strong><br> Padronização visual e peças editoriais alinhadas à marca.</p>
-                        </div>
-
-                    </div>
-                </div>
-                
-                 <!-- SLIDE 7 -->
-                <div class="carousel-item">
-                    <div class="row align-items-start">
-
-                        <div class="col-12 col-md-6 mb-4">
-                            <img src="img/2.jpg" class="img-fluid rounded shadow" alt="Projeto Cliente Y">
-                        </div>
-
-                        <div class="col-12 col-md-6">
-                            <h6 class="txt-gold d-flex align-items-center"><span class="icon icon-logo icon-minimo me-2"></span>Diagramação</h6>
-                            <h1 class="mb-4">Major Washington</h1>
-                            <p><strong>Problema:</strong><br> Material gráfico inconsistente entre mídias.</p>
-                            <p><strong>Solução:</strong><br> Padronização visual e peças editoriais alinhadas à marca.</p>
-                        </div>
-
-                    </div>
-                </div>
-                
-                <!-- SLIDE 8 -->
-                <div class="carousel-item">
-                    <div class="row align-items-start">
-
-                        <div class="col-12 col-md-6 mb-4">
-                            <img src="img/2.jpg" class="img-fluid rounded shadow" alt="Projeto Cliente Y">
-                        </div>
-
-                        <div class="col-12 col-md-6">
-                            <h6 class="txt-gold d-flex align-items-center"><span class="icon icon-logo icon-minimo me-2"></span>Arte-final</h6>
-                            <h1 class="mb-4">Capitão Maverick</h1>
-                            <p><strong>Problema:</strong><br> Ajuste visual para mídias diversas nas redes sociais da empresa.</p>
-                            <p><strong>Solução:</strong><br> Padronização visual, criação de PIV, implementação em mídias digitais e impressas.</p>
-                        </div>
-
-                    </div>
-                </div>
 
             </div>
 
-            <!-- INDICADORES -->
+            <!-- INDICADORES (slides de 1 a X..) -->
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0" class="active"></button>
                 <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="2"></button>                
-                <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="3"></button>
-                <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="4"></button>
-                <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="5"></button>
-                <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="6"></button>
-                <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="7"></button>
                 
             </div>
 
@@ -322,10 +186,10 @@
 
             <!-- Texto -->
             <div class="col-12 col-md-7">
-                <h2 class="text-uppercase">Vamos tirar seu projeto do papel?</h2>
+                <h2 class="text-uppercase">Vamos transformar sua ideia em um projeto visual sólido e funcional</h2>
                 <div class="separador-pequeno txt-gold"></div>
-                <p class="mb-4">Entre em contato e solicite um orçamento sem compromisso.</p>
-                <a href="contato.html" class="btn btn-preto90 btn-lg text-uppercase fw-bold">Fale comigo agora&nbsp;<i class="bi bi-whatsapp"></i></a>
+                <p class="mb-4">Os projetos deste portfolio foram desenvolvidos para resolver problemas reais de comunicação visual. Se você precisa organizar sua marca, profissionalizar sua apresentação ou criar materiais eficientes, entre em contato.</p>
+                <a href="contato.html" class="btn btn-preto90 btn-lg text-uppercase fw-bold">Peça um orçamento sob medida&nbsp;<i class="bi bi-send-check-fill"></i></a>
             </div>
 
         </div>

@@ -173,6 +173,16 @@
     color: var(--cor-texto-padrao);
 }
 
+#portfolioCarousel img,
+#portfolioCarousel picture{
+	max-width:100%;
+	height:100%;
+	display:block;
+}
+#portfolioCarousel img{
+	object-fit:cover;
+}
+
 #portfolioCarousel .carousel-item {
     /* garante que o slide ocupe 100% da largura da coluna */
     width: 100%;

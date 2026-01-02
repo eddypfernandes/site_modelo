@@ -86,6 +86,12 @@ body {
     display: flex;
     flex-direction: column; /* Organiza header, conteúdo e footer em coluna */
     min-height: 98vh;      /* Garante altura mínima total da tela */
+	opacity: 0;
+    transition: opacity 3.5s ease; /* duração e suavidade da abertura */
+}
+/* Classe para ativar a opacidade */
+body.carregado {
+    opacity: 1;
 }
 
 /* Links e botões */
@@ -93,17 +99,7 @@ body {
 	padding:10px 20px;
 	font-size:18px;
 	}
-/*	ABERTURA SUAVE DAS PAGINAS	*/
-/* Inicializa o body invisível */
-body {
-    opacity: 0;
-    transition: opacity 3.5s ease; /* duração e suavidade da abertura */
-}
 
-/* Classe para ativar a opacidade */
-body.carregado {
-    opacity: 1;
-}
 #fade-overlay {
     position: fixed;
     top: 0;
