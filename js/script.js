@@ -64,44 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 /**/
-// ===============================
-// FADE IN / FADE OUT GERAL
-// ===============================
-
-// Função para adicionar fade in na abertura da página
-document.addEventListener("DOMContentLoaded", () => {
-    document.body.style.opacity = 0;
-    document.body.style.transition = "opacity 0.8s ease-in-out";
-    requestAnimationFrame(() => {
-        document.body.style.opacity = 1;
-    });
-});
-
-// Função para adicionar fade out antes de sair da página
-function fadeOutAndRedirect(url) {
-    document.body.style.opacity = 0;
-    setTimeout(() => {
-        if(url) {
-            window.location.href = url; // redireciona para o link
-        }
-    }, 800); // duração do fade out
-}
-
-// Adiciona evento de clique em todos os links internos
-document.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", function(e) {
-        const href = this.getAttribute("href");
-        if(href && !href.startsWith("#")) { // ignora âncoras
-            e.preventDefault();
-            fadeOutAndRedirect(href);
-        }
-    });
-});
-
-// Evento de unload / sair da página (opcional)
-window.addEventListener("beforeunload", (e) => {
-    document.body.style.opacity = 0;
-});
 
 
 /**/
@@ -301,5 +263,24 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
     });
+
+});
+/**/
+
+/* ================================
+   PREENCHE FORM VIA QUERY STRING
+   ================================ */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const textarea = document.getElementById("descricao");
+    if (!textarea) return;
+
+    const params = new URLSearchParams(window.location.search);
+    const assunto = params.get("s");
+
+    if (assunto) {
+        textarea.value = assunto;
+    }
 
 });

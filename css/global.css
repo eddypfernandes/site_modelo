@@ -49,11 +49,11 @@
 }
 
 @charset "utf-8";
-/* =========================
+/* ===============================
    
    RESET INICIAL PARA HTML E BODY
    
-============================= */
+================================ */
 /* Reset básico e configuração de altura total */
 html, body {
     margin: 0;            /* Remove margens padrão do navegador */
@@ -79,48 +79,13 @@ h3 { font-size: clamp(30px, 3.5vw, 40px); }
 h4 { font-size: clamp(28px, 2.5vw, 30px); }
 h5 { font-size: clamp(26px, 2vw, 20px); }
 h6 { font-size: clamp(18px, 1.5vw, 18px); }
-/**/
-
-/* Corpo principal para o vídeo de fundo ocupar toda a tela */
-body {
-    display: flex;
-    flex-direction: column; /* Organiza header, conteúdo e footer em coluna */
-    min-height: 98vh;      /* Garante altura mínima total da tela */
-	opacity: 0;
-    transition: opacity 3.5s ease; /* duração e suavidade da abertura */
-}
-/* Classe para ativar a opacidade */
-body.carregado {
-    opacity: 1;
-}
-
-/* Links e botões */
-.btn{
-	padding:10px 20px;
-	font-size:18px;
-	}
-
-#fade-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5); /* preto 50% */
-    opacity: 0; /* invisível no início */
-    pointer-events: none;
-    z-index: 9999;
-    transition: opacity 0.8s ease-in-out;
-}
-
 
 /* =================================================
    GLOBAL.CSS - Estrutura Base da Home
    Hierarquia: header → navbar → hero-home → footer
    Apenas estrutura, sem personalização visual
 ================================================= */
-/**/
-/**/
+
 /* ===============================
   
    HEADER
@@ -140,8 +105,6 @@ header {
 =            NAVBAR HOME - GLOBAL             =
 
 =============================================*/
-
-/* Navbar principal do hero */
 .navbar-home {
     display: flex;
     flex-direction: column;        /* logo acima dos links */
@@ -151,8 +114,9 @@ header {
     left: 50%;
     transform: translateX(-50%);  /* centraliza horizontalmente */
     width: auto;                   /* largura mínima necessária */
-    z-index: 2;
+    z-index: 5;
     padding-top: 1rem;
+	pointer-events:auto;
 }
 
 /* Container da logo */
@@ -237,7 +201,6 @@ header {
    Overlay e Conteúdo
    
 ============================= */
-/* Estrutura do hero-home */
 .hero-home {
     top:0;
 	left:0;
@@ -320,7 +283,6 @@ header {
     opacity: 1;
 }
 
-/* ===== Responsividade Mobile HERO HOME ===== */
 @media (max-width: 740px) {
     .hero-home .hero-content {
         align-items: center;       /* centraliza horizontalmente */
@@ -398,11 +360,6 @@ header {
     100% { transform: translateX(0); opacity: 1; }
 }
 
-/* Comentários:
-- fade-in/fade-out: para o autoloop do carousel
-- slide-in-left/right: para cliques manuais nos dots
-- duration: pode ser ajustada conforme preferir, sem alterar JS
-*/
 /* =============================
    
    FOOTER FIXO - HOME
@@ -416,7 +373,7 @@ header {
     padding: 15px 0;          /* espaçamento interno */
     background-color: none;   /* cor de fundo, ajustável */
     text-align: center;       /* centraliza conteúdo */
-    z-index: 10;              /* acima de outros elementos, mas abaixo do overlay do hero se houver */
+    z-index: 2;              /* acima de outros elementos, mas abaixo do overlay do hero se houver */
     box-sizing: border-box;
 }
 
@@ -444,19 +401,15 @@ header {
         font-size: 0.9rem;
     }
 }
-/**/
-/**/
-/**/
-/*================================================================================
 
-			PÁGINAS INTERNAS
+/*===========================
 
-/* =========================
-   NAVBAR
-========================= */
+		PÁGINAS INTERNAS
+
+=========================*/
 .navbar {
 
-  z-index: 1050;
+  z-index: 3;
   overflow: none;
 }
 
@@ -507,18 +460,12 @@ section {
   position: relative;
 }
 
-/* =========================
-   SEÇÃO SOBRE
-========================= */
 section .img-bio {
   width:360px;
   height:360px;
   object-fit: cover;
 }
 
-/**/
-/**/
-/**/
 /* =========================
    FOOTER GLOBAL
    (BIO / PORTFÓLIO / CONTATO)
@@ -532,7 +479,7 @@ section .img-bio {
     padding: 15px 0;          /* espaçamento interno */
     background-color: rgba(0, 0, 0, 0.89);
     text-align: center;       /* centraliza conteúdo */
-    z-index: 10;              /* acima de outros elementos, mas abaixo do overlay do hero se houver */
+    z-index: 2;              /* acima de outros elementos, mas abaixo do overlay do hero se houver */
     box-sizing: border-box;
 	opacity:1;
 }
@@ -592,7 +539,7 @@ section .img-bio {
   text-decoration: none;
   font-size: 20px;
   transition: opacity 0.5s ease, visibility 0.5s ease; /* fade suave */
-  z-index: 99999;
+  z-index: 99;
 }
 
 .back-to-top.show {
